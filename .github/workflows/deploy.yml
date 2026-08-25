@@ -1,1 +1,15 @@
-
+name: Deploy to WordPress.org
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.presshangar }}
+          SVN_PASSWORD: ${{ secrets.gWe^9jBxo7Rtr5Rm }}
+          SLUG: presshangar-ai-citations
