@@ -1,0 +1,984 @@
+# Copyright (C) 2026 Musubiemu LLC
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: PressHangar AI Citations 0.3.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/presshangar-ai-citations\n"
+"POT-Creation-Date: 2026-08-22T23:01:49+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: presshangar-ai-citations\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Plugin Name of the plugin
+#: presshangar-ai-citations.php includes/class-phcite-admin.php:61
+#: includes/class-phcite-admin.php:62 includes/class-phcite-admin.php:564
+msgid "PressHangar AI Citations"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: presshangar-ai-citations.php
+msgid "https://presshangar.com/presshangar-ai-citations"
+msgstr ""
+
+#. Description of the plugin
+#: presshangar-ai-citations.php
+msgid ""
+"Helps AI assistants like ChatGPT, Gemini, and Perplexity find, crawl, and "
+"cite your content — AI crawler controls, FAQ schema, and llms.txt in one "
+"place, by PressHangar."
+msgstr ""
+
+#. Author of the plugin
+#: presshangar-ai-citations.php
+msgid "Musubiemu LLC"
+msgstr ""
+
+#. Author URI of the plugin
+#: presshangar-ai-citations.php
+msgid "https://presshangar.com"
+msgstr ""
+
+#: includes/class-phcite-admin.php:127 includes/class-phcite-admin.php:153
+#: includes/class-phcite-admin.php:175 includes/class-phcite-admin.php:203
+#: includes/class-phcite-admin.php:229 includes/class-phcite-admin.php:251
+#: includes/class-phcite-admin.php:278
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: includes/class-phcite-admin.php:285
+msgid "IndexNow is not enabled, so no URLs were submitted."
+msgstr ""
+
+#: includes/class-phcite-admin.php:300
+msgid ""
+"No valid URLs on this site were found in the submitted list (max 100, must "
+"match this site's host)."
+msgstr ""
+
+#: includes/class-phcite-admin.php:341
+msgid ""
+"robots.txt was written to your site root. Its output now permanently "
+"overrides the virtual robots.txt WordPress would otherwise generate."
+msgstr ""
+
+#: includes/class-phcite-admin.php:342
+msgid ""
+"The PressHangar AI Citations block was removed from robots.txt. The rest of "
+"the file (and the file itself) was left in place."
+msgstr ""
+
+#: includes/class-phcite-admin.php:343
+msgid ""
+"The file was restored from the selected backup. The version it replaced was "
+"itself backed up first."
+msgstr ""
+
+#: includes/class-phcite-admin.php:344
+msgid "llms.txt was written to your site root."
+msgstr ""
+
+#: includes/class-phcite-admin.php:345
+msgid "llms.txt was deleted (a backup was kept)."
+msgstr ""
+
+#: includes/class-phcite-admin.php:346
+msgid ""
+"The submitted URLs were sent to IndexNow. Check the log below for the "
+"result."
+msgstr ""
+
+#: includes/class-phcite-admin.php:354
+msgid "The action could not be completed."
+msgstr ""
+
+#: includes/class-phcite-admin.php:369
+msgid ""
+"PressHangar AI Citations could not update the physical robots.txt file after"
+" your settings change:"
+msgstr ""
+
+#: includes/class-phcite-admin.php:379
+msgid ""
+"PressHangar AI Citations could not update the physical llms.txt file after "
+"your settings change:"
+msgstr ""
+
+#: includes/class-phcite-admin.php:389
+msgid ""
+"PressHangar AI Citations could not add its rules to the virtual robots.txt "
+"output:"
+msgstr ""
+
+#: includes/class-phcite-admin.php:398
+msgid ""
+"PressHangar AI Citations could not fetch your site's live robots.txt to seed"
+" the new physical file, so it seeded from WordPress's internal defaults "
+"instead. Please compare the new robots.txt against your site's actual live "
+"output and add anything missing by hand (for example, rules added only by a "
+"front-end-only plugin)."
+msgstr ""
+
+#: includes/class-phcite-admin.php:406
+msgid ""
+"PressHangar AI Citations is set to physical robots.txt mode, but the "
+"physical file no longer exists (it may have been removed outside the "
+"plugin). PressHangar AI Citations is serving its virtual robots.txt output "
+"as a fallback in the meantime. Click \"Make physical\" again to re-create "
+"the file, or switch back to virtual mode."
+msgstr ""
+
+#: includes/class-phcite-admin.php:414
+msgid ""
+"PressHangar AI Citations skipped FAQ schema generation on at least one "
+"recent page view because the post content was too large to scan safely."
+msgstr ""
+
+#: includes/class-phcite-admin.php:415
+msgid ""
+"PressHangar AI Citations skipped FAQ schema generation on at least one "
+"recent page view: the content was too complex for the FAQ pattern to scan "
+"safely."
+msgstr ""
+
+#: includes/class-phcite-admin.php:518
+msgid "This page would get FAQPage schema output."
+msgstr ""
+
+#: includes/class-phcite-admin.php:519
+msgid "Enter a post ID or URL above."
+msgstr ""
+
+#: includes/class-phcite-admin.php:520
+msgid "No post was found for that ID or URL."
+msgstr ""
+
+#: includes/class-phcite-admin.php:521
+msgid "FAQ schema generation is turned off."
+msgstr ""
+
+#: includes/class-phcite-admin.php:522
+msgid "This content's post type is not in the selected list."
+msgstr ""
+
+#: includes/class-phcite-admin.php:523
+msgid "This post is password protected."
+msgstr ""
+
+#: includes/class-phcite-admin.php:524
+msgid "This post is in an excluded category."
+msgstr ""
+
+#: includes/class-phcite-admin.php:525
+msgid ""
+"This post already contains its own FAQPage JSON-LD, so PressHangar AI "
+"Citations skips it to avoid duplicate output."
+msgstr ""
+
+#: includes/class-phcite-admin.php:526
+msgid ""
+"This post already uses a Yoast or Rank Math FAQ block, so PressHangar AI "
+"Citations skips it to avoid duplicate output."
+msgstr ""
+
+#: includes/class-phcite-admin.php:527
+msgid "Fewer Q&A pairs were detected than the configured minimum."
+msgstr ""
+
+#: includes/class-phcite-admin.php:528
+msgid ""
+"This content is too large (over 300 KB) to scan safely, so it was skipped."
+msgstr ""
+
+#: includes/class-phcite-admin.php:529
+msgid ""
+"The FAQ pattern could not be evaluated on this content (too complex), so it "
+"was skipped."
+msgstr ""
+
+#: includes/class-phcite-admin.php:565
+msgid ""
+"Help AI assistants like ChatGPT, Gemini, and Perplexity find, crawl, and "
+"cite your content."
+msgstr ""
+
+#: includes/class-phcite-admin.php:568
+msgid "AI Crawlers"
+msgstr ""
+
+#: includes/class-phcite-admin.php:569
+msgid "FAQ Schema"
+msgstr ""
+
+#: includes/class-phcite-admin.php:570 includes/class-phcite-admin.php:1142
+msgid "llms.txt"
+msgstr ""
+
+#: includes/class-phcite-admin.php:571 includes/class-phcite-admin.php:958
+#: includes/class-phcite-admin.php:1146
+msgid "IndexNow"
+msgstr ""
+
+#. translators: %s: filename, e.g. robots.txt
+#: includes/class-phcite-admin.php:582
+#, php-format
+msgid "Manual copy needed for %s"
+msgstr ""
+
+#: includes/class-phcite-admin.php:587
+msgid ""
+"PressHangar AI Citations could not write this file automatically. Copy the "
+"text below and upload it to your site root via FTP or your host's file "
+"manager."
+msgstr ""
+
+#: includes/class-phcite-admin.php:621
+msgid "Output mode"
+msgstr ""
+
+#: includes/class-phcite-admin.php:624
+msgid "Physical file missing — serving virtual fallback"
+msgstr ""
+
+#: includes/class-phcite-admin.php:625
+msgid ""
+"PressHangar AI Citations is set to physical mode, but the physical "
+"robots.txt file is gone (likely removed outside the plugin). Virtual output "
+"is being served as a fallback until you re-create it."
+msgstr ""
+
+#: includes/class-phcite-admin.php:627
+msgid "Physical file — active"
+msgstr ""
+
+#: includes/class-phcite-admin.php:628
+msgid ""
+"A real robots.txt file exists at your site root. It always wins over any "
+"virtual robots.txt output, including this plugin's own."
+msgstr ""
+
+#: includes/class-phcite-admin.php:630
+msgid "Virtual (default)"
+msgstr ""
+
+#: includes/class-phcite-admin.php:631
+msgid ""
+"PressHangar AI Citations adds its rules to WordPress's generated robots.txt "
+"on the fly. This is overridden if any physical robots.txt file exists on the"
+" server (from this plugin or another)."
+msgstr ""
+
+#: includes/class-phcite-admin.php:635
+msgid "Why physical mode exists:"
+msgstr ""
+
+#: includes/class-phcite-admin.php:636
+msgid ""
+"On some setups, another plugin or server rule can silently override the "
+"virtual robots.txt even at maximum filter priority. Writing a real file "
+"guarantees your AI-crawler rules take effect. Physicalizing captures the "
+"current virtual output (including other plugins' rules) as a starting point "
+"— after that, the physical file is fully independent and virtual output no "
+"longer has any effect."
+msgstr ""
+
+#: includes/class-phcite-admin.php:642
+msgid "Re-apply to physical file"
+msgstr ""
+
+#: includes/class-phcite-admin.php:642
+msgid "Make physical (write robots.txt)"
+msgstr ""
+
+#: includes/class-phcite-admin.php:646
+msgid ""
+"Remove the PressHangar AI Citations block from robots.txt? The rest of the "
+"file is kept."
+msgstr ""
+
+#: includes/class-phcite-admin.php:649
+msgid "Remove managed block"
+msgstr ""
+
+#: includes/class-phcite-admin.php:661
+msgid "AI bot rules"
+msgstr ""
+
+#: includes/class-phcite-admin.php:662
+msgid ""
+"Choose Allow, Block, or No rule (omit entirely) for each bot. These rules "
+"are combined into a single managed block in robots.txt."
+msgstr ""
+
+#: includes/class-phcite-admin.php:666
+msgid "Bot"
+msgstr ""
+
+#: includes/class-phcite-admin.php:667
+msgid "What it does"
+msgstr ""
+
+#: includes/class-phcite-admin.php:668
+msgid "Rule"
+msgstr ""
+
+#: includes/class-phcite-admin.php:679
+msgid "Allow"
+msgstr ""
+
+#: includes/class-phcite-admin.php:680
+msgid "Block"
+msgstr ""
+
+#: includes/class-phcite-admin.php:681
+msgid "No rule"
+msgstr ""
+
+#: includes/class-phcite-admin.php:688
+msgid "Save AI Crawler Settings"
+msgstr ""
+
+#: includes/class-phcite-admin.php:697
+msgid "Current live robots.txt"
+msgstr ""
+
+#: includes/class-phcite-admin.php:698
+msgid "This is what a visitor to your site sees right now at /robots.txt."
+msgstr ""
+
+#: includes/class-phcite-admin.php:723
+msgid "FAQPage schema generation"
+msgstr ""
+
+#: includes/class-phcite-admin.php:724
+msgid ""
+"Detects \"Q. question / A. answer\" pairs inside a post's own content and "
+"outputs FAQPage structured data (JSON-LD) automatically. No changes are made"
+" to the post itself."
+msgstr ""
+
+#: includes/class-phcite-admin.php:728 includes/class-phcite-admin.php:963
+msgid "Enable"
+msgstr ""
+
+#: includes/class-phcite-admin.php:732
+msgid "Automatically output FAQPage schema where detected."
+msgstr ""
+
+#: includes/class-phcite-admin.php:737
+msgid "Question / Answer markers"
+msgstr ""
+
+#: includes/class-phcite-admin.php:740
+msgid "Question prefix"
+msgstr ""
+
+#: includes/class-phcite-admin.php:745
+msgid "Answer prefix"
+msgstr ""
+
+#: includes/class-phcite-admin.php:748
+msgid ""
+"Expected pattern: <strong>{Q prefix} question</strong> followed by {A "
+"prefix}. answer. For example \"Q\" / \"A\" matches \"<strong>Q. What "
+"is...?</strong> A. It is...\". Both full-width and half-width periods are "
+"accepted after the question prefix; a period is required after the answer "
+"prefix."
+msgstr ""
+
+#: includes/class-phcite-admin.php:752
+msgid "Question / answer counts"
+msgstr ""
+
+#: includes/class-phcite-admin.php:755
+msgid "Minimum pairs to output"
+msgstr ""
+
+#: includes/class-phcite-admin.php:760
+msgid "Maximum pairs to output"
+msgstr ""
+
+#: includes/class-phcite-admin.php:763
+msgid ""
+"Posts with fewer detected pairs than the minimum get no schema output at "
+"all."
+msgstr ""
+
+#: includes/class-phcite-admin.php:767
+msgid "Minimum lengths"
+msgstr ""
+
+#: includes/class-phcite-admin.php:770
+msgid "Question, characters"
+msgstr ""
+
+#: includes/class-phcite-admin.php:775
+msgid "Answer, characters"
+msgstr ""
+
+#: includes/class-phcite-admin.php:781
+msgid "Post types"
+msgstr ""
+
+#: includes/class-phcite-admin.php:795
+msgid "Excluded categories"
+msgstr ""
+
+#: includes/class-phcite-admin.php:804
+msgid ""
+"No schema is output for posts in these categories. Useful, for example, to "
+"exclude a sponsored/PR category where a rich-result FAQ snippet would be "
+"inappropriate."
+msgstr ""
+
+#: includes/class-phcite-admin.php:809
+msgid ""
+"Safety: to avoid duplicate structured data, output is automatically skipped "
+"for any post that already contains its own FAQPage JSON-LD, or a Yoast or "
+"Rank Math FAQ block."
+msgstr ""
+
+#: includes/class-phcite-admin.php:811
+msgid "Save FAQ Schema Settings"
+msgstr ""
+
+#: includes/class-phcite-admin.php:816
+msgid "Preview: what would this page output?"
+msgstr ""
+
+#: includes/class-phcite-admin.php:817
+msgid ""
+"Enter a post ID or a URL on this site to see what PressHangar AI Citations "
+"would detect and whether it would output schema for it. This is read-only — "
+"nothing is saved or published."
+msgstr ""
+
+#: includes/class-phcite-admin.php:820
+msgid "Post ID or URL"
+msgstr ""
+
+#: includes/class-phcite-admin.php:821
+msgid "Preview"
+msgstr ""
+
+#. translators: %s: post title.
+#: includes/class-phcite-admin.php:831
+#, php-format
+msgid "Checked: %s"
+msgstr ""
+
+#: includes/class-phcite-admin.php:842
+msgid "Question"
+msgstr ""
+
+#: includes/class-phcite-admin.php:843
+msgid "Answer"
+msgstr ""
+
+#: includes/class-phcite-admin.php:872 includes/class-phcite-admin.php:948
+msgid "Honest note:"
+msgstr ""
+
+#: includes/class-phcite-admin.php:873
+msgid ""
+"llms.txt is an emerging, informal convention. There is currently no "
+"confirmation that major AI crawlers read or use it, and its effect on "
+"citations may be limited. It costs nothing to publish, but treat it as "
+"experimental, not a guaranteed win."
+msgstr ""
+
+#: includes/class-phcite-admin.php:878
+msgid "Status"
+msgstr ""
+
+#: includes/class-phcite-admin.php:881
+msgid "llms.txt exists at your site root."
+msgstr ""
+
+#: includes/class-phcite-admin.php:883
+msgid "No llms.txt file yet."
+msgstr ""
+
+#: includes/class-phcite-admin.php:893
+msgid "Site name / tagline"
+msgstr ""
+
+#: includes/class-phcite-admin.php:896
+msgid "Pulled automatically from Settings > General."
+msgstr ""
+
+#: includes/class-phcite-admin.php:900
+msgid "Free-text description"
+msgstr ""
+
+#: includes/class-phcite-admin.php:903
+msgid ""
+"Anything you want an AI assistant reading llms.txt to know about this site: "
+"what it covers, how to cite it, etc."
+msgstr ""
+
+#: includes/class-phcite-admin.php:907
+msgid "Key pages"
+msgstr ""
+
+#: includes/class-phcite-admin.php:910
+msgid "One URL per line."
+msgstr ""
+
+#: includes/class-phcite-admin.php:914
+msgid "Save llms.txt Settings"
+msgstr ""
+
+#: includes/class-phcite-admin.php:920
+msgid "Regenerate llms.txt"
+msgstr ""
+
+#: includes/class-phcite-admin.php:920
+msgid "Generate llms.txt"
+msgstr ""
+
+#: includes/class-phcite-admin.php:924
+msgid "Delete llms.txt? A backup will be kept."
+msgstr ""
+
+#: includes/class-phcite-admin.php:927
+msgid "Delete llms.txt"
+msgstr ""
+
+#: includes/class-phcite-admin.php:949
+msgid ""
+"IndexNow is used by Bing, Yandex, and other participating search engines. "
+"Google does not use IndexNow — submit to Google Search Console separately if"
+" you want faster Google indexing."
+msgstr ""
+
+#: includes/class-phcite-admin.php:959
+msgid ""
+"Automatically tell IndexNow-participating search engines about new and "
+"updated content, so they can crawl it faster."
+msgstr ""
+
+#: includes/class-phcite-admin.php:967
+msgid "Turn on IndexNow submissions for this site."
+msgstr ""
+
+#: includes/class-phcite-admin.php:972
+msgid "Auto-submit"
+msgstr ""
+
+#: includes/class-phcite-admin.php:976
+msgid "When a post or page is published."
+msgstr ""
+
+#: includes/class-phcite-admin.php:980
+msgid "When an already-published post or page is updated."
+msgstr ""
+
+#: includes/class-phcite-admin.php:982
+msgid ""
+"Submissions are queued and sent in the background a few minutes later, so "
+"publishing and saving are never slowed down."
+msgstr ""
+
+#: includes/class-phcite-admin.php:987 includes/class-phcite-admin.php:1004
+msgid "Your IndexNow key"
+msgstr ""
+
+#. translators: %s: key file URL.
+#: includes/class-phcite-admin.php:994
+#, php-format
+msgid "Hosted automatically at: %s"
+msgstr ""
+
+#: includes/class-phcite-admin.php:998
+msgid "(verify)"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1005
+msgid ""
+"A key will be generated automatically the first time you enable and save "
+"IndexNow."
+msgstr ""
+
+#: includes/class-phcite-admin.php:1009
+msgid "Queue"
+msgstr ""
+
+#. translators: %s: number of URLs currently waiting to be submitted.
+#: includes/class-phcite-admin.php:1014
+#, php-format
+msgid "%s URL waiting to be submitted."
+msgid_plural "%s URLs waiting to be submitted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-phcite-admin.php:1022
+msgid "Save IndexNow Settings"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1027
+msgid "Manual submit"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1028
+msgid ""
+"Paste up to 100 URLs on this site, one per line. URLs on other hosts are "
+"ignored."
+msgstr ""
+
+#: includes/class-phcite-admin.php:1033
+msgid "Submit URLs to IndexNow"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1035
+msgid "Enable and save IndexNow above first."
+msgstr ""
+
+#: includes/class-phcite-admin.php:1042
+msgid "Submission log"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1046
+msgid "Time"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1047
+msgid "URLs"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1048
+msgid "Result"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1079
+msgid "Backups"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1087
+msgid "Restore this backup? The current file will itself be backed up first."
+msgstr ""
+
+#: includes/class-phcite-admin.php:1091
+msgid "Restore"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1110
+msgid "Current status"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1114
+msgid "robots.txt mode"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1117
+msgid "Physical (file missing)"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1119
+msgid "Physical"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1121
+msgid "Virtual"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1126
+msgid "Bots allowed"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1130
+msgid "Bots blocked"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1134
+msgid "FAQ schema"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1135 includes/class-phcite-admin.php:1147
+msgid "Enabled"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1135 includes/class-phcite-admin.php:1147
+msgid "Disabled"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1138
+msgid "FAQ target"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1143
+msgid "Present"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1143
+msgid "Not created"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1154
+msgid "Measure your AI visibility"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1156
+msgid "Bing Webmaster Tools (AI Performance report)"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1157
+msgid "Google Search Console"
+msgstr ""
+
+#: includes/class-phcite-admin.php:1158
+msgid "Google Rich Results Test"
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:116
+#: includes/class-phcite-filewriter.php:510
+msgid ""
+"PressHangar AI Citations only manages robots.txt and llms.txt; refusing to "
+"touch any other file."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:121
+msgid "Could not resolve the WordPress root directory."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:130
+msgid "Could not resolve the target file path."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:133
+#: includes/class-phcite-filewriter.php:144
+msgid "Refusing to write outside the WordPress root directory."
+msgstr ""
+
+#. translators: %s: filename, e.g. robots.txt.
+#: includes/class-phcite-filewriter.php:225
+#, php-format
+msgid ""
+"The WordPress filesystem API could not be initialized, so %s could not be "
+"saved automatically. Use the text below to copy it manually via FTP or your "
+"host's file manager."
+msgstr ""
+
+#. translators: %s: backup error message.
+#: includes/class-phcite-filewriter.php:244
+#, php-format
+msgid ""
+"Could not back up the existing file before writing, so nothing was changed: "
+"%s"
+msgstr ""
+
+#. translators: %s: filename, e.g. robots.txt.
+#: includes/class-phcite-filewriter.php:258
+#, php-format
+msgid ""
+"The WordPress root directory is not writable, so %s could not be saved "
+"automatically. Use the text below to copy it manually via FTP or your host's"
+" file manager."
+msgstr ""
+
+#. translators: %s: filename, e.g. robots.txt.
+#: includes/class-phcite-filewriter.php:272
+#, php-format
+msgid ""
+"Writing %s failed. If it was partially written, restore the backup just "
+"taken above. Use the text below to copy it manually via FTP or your host's "
+"file manager."
+msgstr ""
+
+#. translators: %s: filename, e.g. llms.txt.
+#: includes/class-phcite-filewriter.php:310
+#, php-format
+msgid ""
+"Could not delete %s: the WordPress filesystem API could not be initialized. "
+"It may need to be removed manually via FTP or your host's file manager."
+msgstr ""
+
+#. translators: %s: filename, e.g. llms.txt.
+#: includes/class-phcite-filewriter.php:321
+#, php-format
+msgid ""
+"Could not delete %s. It may need to be removed manually via FTP or your "
+"host's file manager."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:352
+msgid "The backup directory could not be created or is not writable."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:393
+msgid ""
+"Could not read the existing file to back it up: the WordPress filesystem API"
+" could not be initialized."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:398
+msgid "Could not read the existing file to back it up."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:413
+msgid "Could not write the backup file."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:519
+msgid "That backup could not be found."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:532
+msgid "Refusing to restore from a file outside the backups directory."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:537
+msgid ""
+"Could not read the backup file: the WordPress filesystem API could not be "
+"initialized."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:542
+msgid "Could not read the backup file."
+msgstr ""
+
+#: includes/class-phcite-filewriter.php:580
+msgid ""
+"A PressHangar AI Citations marker (\"# BEGIN PressHangar AI Citations\" or "
+"\"# END PressHangar AI Citations\") was found without its matching pair, so "
+"the file was not changed. Remove the stray marker line manually via FTP or "
+"your host's file manager, then try again."
+msgstr ""
+
+#: includes/class-phcite-indexnow.php:349
+msgid "no key configured"
+msgstr ""
+
+#: includes/class-phcite-robots.php:182 includes/class-phcite-robots.php:242
+msgid "Could not read the existing robots.txt file."
+msgstr ""
+
+#: includes/class-phcite-robots.php:237
+msgid "No physical robots.txt file exists."
+msgstr ""
+
+#: includes/class-phcite-settings.php:52
+msgid ""
+"OpenAI's crawler used to train GPT models. Allowing it lets OpenAI use your "
+"content as training data."
+msgstr ""
+
+#: includes/class-phcite-settings.php:57
+msgid ""
+"OpenAI's crawler for ChatGPT's search feature. Allowing it lets your pages "
+"appear as sources in ChatGPT search results."
+msgstr ""
+
+#: includes/class-phcite-settings.php:62
+msgid ""
+"Fetches a page on behalf of a user who pasted your URL into ChatGPT. "
+"Allowing it lets ChatGPT read and summarize that specific page when asked."
+msgstr ""
+
+#: includes/class-phcite-settings.php:67
+msgid ""
+"Controls whether Google may use your content to train Gemini and other AI "
+"models, separate from regular Googlebot indexing."
+msgstr ""
+
+#: includes/class-phcite-settings.php:72
+msgid ""
+"Perplexity's crawler that indexes content for its answer engine. Allowing it"
+" lets your pages be cited in Perplexity's answers."
+msgstr ""
+
+#: includes/class-phcite-settings.php:77
+msgid ""
+"Fetches a page on behalf of a user who shared your URL with Perplexity, "
+"similar to ChatGPT-User."
+msgstr ""
+
+#: includes/class-phcite-settings.php:82
+msgid ""
+"Anthropic's crawler used to train Claude models. Allowing it lets Anthropic "
+"use your content as training data."
+msgstr ""
+
+#: includes/class-phcite-settings.php:87
+msgid ""
+"Anthropic's crawler that fetches a page in real time when a Claude user "
+"references its URL."
+msgstr ""
+
+#: includes/class-phcite-settings.php:92
+msgid ""
+"Controls whether Apple may use your content to train Apple Intelligence "
+"features, separate from regular Applebot indexing."
+msgstr ""
+
+#: includes/class-phcite-settings.php:97
+msgid ""
+"Meta's crawler used to train AI models and improve products such as Meta AI."
+msgstr ""
+
+#: includes/class-phcite-settings.php:102
+msgid ""
+"ByteDance's (TikTok) crawler. Its purpose and AI use are less clearly "
+"disclosed than the bots above, so no rule is set by default."
+msgstr ""
+
+#: includes/class-phcite-settings.php:107
+msgid ""
+"Common Crawl's crawler. Its open dataset is reused to train many different "
+"companies' AI models, not just one."
+msgstr ""
+
+#: includes/class-phcite-settings.php:112
+msgid ""
+"Amazon's general-purpose crawler (Alexa, shopping, and AI features). Not "
+"focused on assistant citations, so no rule is set by default."
+msgstr ""
+
+#: includes/class-phcite-settings.php:275
+msgid "Settings saved."
+msgstr ""
+
+msgid ""
+"Help AI assistants like ChatGPT, Gemini, and Perplexity find, crawl, and "
+"cite your content. New here? Follow the steps below — it only takes a few "
+"minutes."
+msgstr ""
+
+msgid "Getting started"
+msgstr ""
+
+msgid "Choose which AI crawlers may read your site"
+msgstr ""
+
+msgid ""
+"On the \"AI Crawlers\" tab, allow the assistants you want to be cited by "
+"(ChatGPT, Claude, Perplexity…) and block the rest. Then Save."
+msgstr ""
+
+msgid "Keep FAQ schema on"
+msgstr ""
+
+msgid ""
+"Turns \"Q. … A. …\" text in your posts into FAQ structured data, which AI "
+"and search engines can quote. It is on by default."
+msgstr ""
+
+msgid "Generate your llms.txt file"
+msgstr ""
+
+msgid ""
+"A simple guide file that tells AI assistants what your site is about and "
+"where the key pages are. Create it on the \"llms.txt\" tab."
+msgstr ""
+
+msgid "Turn on IndexNow"
+msgstr ""
+
+msgid ""
+"Instantly tells Bing, Yandex and other engines when you publish or update a "
+"page. Generate a key and enable it on the \"IndexNow\" tab."
+msgstr ""
