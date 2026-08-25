@@ -11,5 +11,5 @@ jobs:
       - uses: 10up/action-wordpress-plugin-deploy@stable
         env:
           SVN_USERNAME: ${{ secrets.presshangar }}
-          SVN_PASSWORD: ${{ secrets.gWe^9jBxo7Rtr5Rm }}
+          SVN_PASSWORD: ${{ secrets.svn_ndNwaLjJVqUb4ofynYM3ogRzMy3uQxIQa4e4eeb2 }}
           SLUG: presshangar-ai-citations
