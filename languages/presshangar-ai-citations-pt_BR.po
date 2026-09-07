@@ -1159,3 +1159,19 @@ msgid ""
 msgstr ""
 "Avisa instantaneamente o Bing, o Yandex e outros mecanismos quando você "
 "publica ou atualiza uma página. Gere uma chave e ative-o na aba “IndexNow”."
+
+#: includes/class-phcite-admin.php:0
+msgid ""
+"Finding this plugin useful? A quick review really helps others discover it —"
+" thank you!"
+msgstr ""
+"Este plugin é útil para você? Uma avaliação rápida ajuda outras pessoas a "
+"descobri-lo — obrigado!"
+
+#: includes/class-phcite-admin.php:0
+msgid "Leave a review ★★★★★"
+msgstr "Deixe uma avaliação ★★★★★"
+
+#: includes/class-phcite-admin.php:0
+msgid "No thanks"
+msgstr "Não, obrigado"

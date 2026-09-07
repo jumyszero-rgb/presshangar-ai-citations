@@ -1181,3 +1181,19 @@ msgstr ""
 "Teilt Bing, Yandex und anderen Suchmaschinen sofort mit, wenn du eine Seite "
 "veröffentlichst oder aktualisierst. Erzeuge einen Schlüssel und aktiviere es"
 " im Tab „IndexNow“."
+
+#: includes/class-phcite-admin.php:0
+msgid ""
+"Finding this plugin useful? A quick review really helps others discover it —"
+" thank you!"
+msgstr ""
+"Findest du dieses Plugin nützlich? Eine kurze Bewertung hilft anderen sehr, "
+"es zu entdecken – danke!"
+
+#: includes/class-phcite-admin.php:0
+msgid "Leave a review ★★★★★"
+msgstr "Bewertung abgeben ★★★★★"
+
+#: includes/class-phcite-admin.php:0
+msgid "No thanks"
+msgstr "Nein, danke"

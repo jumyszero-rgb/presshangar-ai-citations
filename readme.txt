@@ -1,16 +1,18 @@
 === PressHangar AI Citations ===
 Contributors: presshangar
-Tags: ai, robots.txt, schema, llmo, seo
+Tags: llms.txt, GPTBot, AI crawler, robots.txt, AI SEO
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.3.6
+Stable tag: 0.3.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Get your site cited by AI assistants—ChatGPT, Gemini, Perplexity, Claude and more.
+Generate llms.txt and control AI crawlers (GPTBot, ChatGPT) via robots.txt and IndexNow — so your content is found and cited by AI search.
 
 == Description ==
+
+PressHangar AI Citations helps your content get found and cited by AI search. Generate an llms.txt file, allow or block AI crawlers such as GPTBot and ChatGPT through robots.txt, and ping IndexNow — a simple AI SEO / GEO toolkit for WordPress.
 
 Billions of people use AI assistants every day. Many get useful information from your WordPress site—but few ever know it came from you. PressHangar AI Citations changes that.
 
@@ -107,6 +109,9 @@ The shared endpoint at api.indexnow.org is operated by the participating search 
 * Microsoft Privacy Statement (Bing operates the shared endpoint): https://privacy.microsoft.com/privacystatement
 
 == Changelog ==
+
+= 0.3.7 =
+* Added a gentle, dismissible review request that appears only after you've used the plugin (no incentives). readme search-keyword optimization. No functional or data changes.
 
 = 0.3.6 =
 * Added bundled translations for French, Spanish, German, Brazilian Portuguese, and Italian, so the full admin interface (including the Getting started panel) is localized out of the box in seven languages alongside English and Japanese.

@@ -27,6 +27,12 @@ class PHCITE_Admin {
 	const NONCE_INDEXNOW_MANUAL    = 'phcite_indexnow_manual_submit';
 
 	/**
+	 * Option flag: set to 1 once the user has dismissed the review request,
+	 * so it never appears again on this site.
+	 */
+	const OPTION_REVIEW_DISMISSED = 'phcite_review_dismissed';
+
+	/**
 	 * Transient key (per user) used to hand the intended file content to
 	 * the manual-copy textarea fallback after a failed physical write.
 	 *
@@ -533,6 +539,47 @@ class PHCITE_Admin {
 	}
 
 	/**
+	 * Record the user's choice to dismiss the review request. Fired from the
+	 * "No thanks" link on the review card; guarded by capability + nonce.
+	 *
+	 * @return void
+	 */
+	private static function maybe_dismiss_review() {
+		if ( ! isset( $_GET['phcite_review_off'] ) || ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_GET['_wpnonce'] ) ), 'phcite_review_off' ) ) {
+			return;
+		}
+		update_option( self::OPTION_REVIEW_DISMISSED, 1 );
+	}
+
+	/**
+	 * A gentle, dismissible request for a wordpress.org review. Shows only
+	 * after the user has actually used the plugin (saved settings at least
+	 * once) and never again once dismissed. No incentive is offered.
+	 *
+	 * @param bool $earned Whether the user has used the plugin enough to ask.
+	 * @return void
+	 */
+	private static function render_review_ask( $earned ) {
+		if ( ! $earned || get_option( self::OPTION_REVIEW_DISMISSED ) ) {
+			return;
+		}
+
+		$review_url  = 'https://wordpress.org/support/plugin/presshangar-ai-citations/reviews/#new-post';
+		$dismiss_url = wp_nonce_url( self::redirect_url( 'robots', array( 'phcite_review_off' => 1 ) ), 'phcite_review_off' );
+
+		$html  = '<div style="border:1px solid #c3c4c7;border-left:4px solid #f6a72a;background:#fff;border-radius:4px;padding:12px 16px;max-width:820px;margin:16px 0;">';
+		$html .= '<p style="margin:.2em 0 .6em;">' . esc_html__( 'Finding this plugin useful? A quick review really helps others discover it — thank you!', 'presshangar-ai-citations' ) . '</p>';
+		$html .= '<a href="' . esc_url( $review_url ) . '" target="_blank" rel="noopener" class="button button-primary" style="margin-right:.6em;">' . esc_html__( 'Leave a review ★★★★★', 'presshangar-ai-citations' ) . '</a>';
+		$html .= '<a href="' . esc_url( $dismiss_url ) . '" style="color:#50575e;text-decoration:none;">' . esc_html__( 'No thanks', 'presshangar-ai-citations' ) . '</a>';
+		$html .= '</div>';
+
+		echo wp_kses_post( $html );
+	}
+
+	/**
 	 * Render the settings page.
 	 */
 	/**
@@ -595,6 +642,9 @@ class PHCITE_Admin {
 		if ( ! current_user_can( 'manage_options' ) ) {
 			return;
 		}
+
+		self::maybe_dismiss_review();
+		$review_earned = ( false !== get_option( PHCITE_OPTION_SETTINGS, false ) );
 
 		$settings = PHCITE_Settings::get_settings();
 		$status   = self::get_status();
@@ -662,6 +712,8 @@ class PHCITE_Admin {
 					<?php self::render_sidebar( $status ); ?>
 				</div>
 			</div>
+
+			<?php self::render_review_ask( $review_earned ); ?>
 		</div>
 		<?php
 	}

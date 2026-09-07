@@ -23,6 +23,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 delete_option( 'phcite_settings' );
 delete_option( 'phcite_indexnow_queue' );
 delete_option( 'phcite_indexnow_log' );
+delete_option( 'phcite_review_dismissed' );
 
 if ( function_exists( 'wp_clear_scheduled_hook' ) ) {
 	wp_clear_scheduled_hook( 'phcite_indexnow_flush' );

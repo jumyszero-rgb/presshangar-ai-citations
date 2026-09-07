@@ -3,7 +3,7 @@
  * Plugin Name:       PressHangar AI Citations
  * Plugin URI:        https://presshangar.com/presshangar-ai-citations
  * Description:       Helps AI assistants like ChatGPT, Gemini, and Perplexity find, crawl, and cite your content — AI crawler controls, FAQ schema, and llms.txt in one place, by PressHangar.
- * Version:           0.3.6
+ * Version:           0.3.7
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Musubiemu LLC
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Plugin version. */
-define( 'PHCITE_VERSION', '0.3.6' );
+define( 'PHCITE_VERSION', '0.3.7' );
 
 
 /* Load translations: bundled /languages first, then WordPress.org language packs. */
