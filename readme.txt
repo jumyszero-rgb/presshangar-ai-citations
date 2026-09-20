@@ -4,7 +4,7 @@ Tags: llms.txt, GPTBot, AI crawler, robots.txt, AI SEO
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.3.7
+Stable tag: 0.3.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -109,6 +109,9 @@ The shared endpoint at api.indexnow.org is operated by the participating search 
 * Microsoft Privacy Statement (Bing operates the shared endpoint): https://privacy.microsoft.com/privacystatement
 
 == Changelog ==
+
+= 0.3.8 =
+* Re-release to publish the search-keyword readme optimization and refresh "Tested up to". The previous tag did not update the directory listing. No functional or data changes.
 
 = 0.3.7 =
 * Added a gentle, dismissible review request that appears only after you've used the plugin (no incentives). readme search-keyword optimization. No functional or data changes.
